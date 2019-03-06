@@ -1,7 +1,7 @@
 {
-  "name": "istadm",
+  "name": "gulptaskmustache",
   "version": "1.0.0",
-  "description": "istadm Admin Template",
+  "description": "Gulp Task Mustache",
   "keywords": [
     "cc"
   ],
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "sss"
+    "url": "https://github.com/fahrettinaksoy/gulp-task-mustache"
   },
   "license": "ISC",
   "dependencies": {
