@@ -1,19 +1,637 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Gulp Task Mustache</title>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta name="author" content="author" />
-		<meta name="description" content="description" />
-		<meta name="keywords" content="keywords" />
-	</head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Content management panel and management interface panel">
+		<meta name="author" content="Fahrettin Aksoy">
+		<title>istADM - Admin Template</title>		<link type="text/css" rel="stylesheet" href="plugins/fonts/fontawesome/css/all.min.css" />
+		<link type="text/css" rel="stylesheet" href="plugins/fonts/icofont/css/icofont.min.css" />
+		<link type="text/css" rel="stylesheet" href="plugins/fonts/themify-icons/css/themify-icons.min.css" />
+		<link type="text/css" rel="stylesheet" href="plugins/fonts/flag-icon/css/flag-icon.min.css" />
+		
+		<link type="text/css" rel="stylesheet" href="common/css/style.css" media="all" />
+		<link rel="manifest" href="manifest.json">	</head>
 	<body>
-		<main>
-<header>Header</header>
-			<section>Section</section
-<footer>Footer</footer>
-		</main>
-	</body>
+		<aside class="slidePanel slidePanel-left">
+			<div class="profile">
+				
+			</div>
+			<nav class="menu_asideLeft">
+				<ul>
+					<li>
+						<a href="index.html" title="Dashboard">
+							<span>Dashboard</span>
+							<i class="icofont-ui-home"></i>
+						</a>
+					</li>
+					<li>
+						<a title="Bootstrap">
+							<span>Bootstrap</span>
+							<i class="icofont-bootstrap"></i>
+						</a>
+						<ul>
+							<li>
+								<a title="Layout"><span>Layout</span></a>
+								<ul>
+									<li><a href="bootstrap-layout-grid.html" title="Grid"><span>Grid</span></a></li>
+									<li><a href="bootstrap-layout-media_object.html" title="Media object"><span>Media object</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Content"><span>Content</span></a>
+								<ul>
+									<li><a href="bootstrap-content-typography.html" title="Typography"><span>Typography</span></a></li>
+									<li><a href="bootstrap-content-images.html" title="Images"><span>Images</span></a></li>
+									<li><a href="bootstrap-content-tables.html" title="Tables"><span>Tables</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Components"><span>Components</span></a>
+								<ul>
+									<li><a href="bootstrap-components-alerts.html" title="Alerts"><span>Alerts</span></a></li>
+									<li><a href="bootstrap-components-badges.html" title="Badges"><span>Badges</span></a></li>
+									<li><a href="bootstrap-components-breadcrumb.html" title="Breadcrumb"><span>Breadcrumb</span></a></li>
+									<li><a href="bootstrap-components-buttons.html" title="Buttons"><span>Buttons</span></a></li>
+									<li><a href="bootstrap-components-button_group.html" title="Button group"><span>Button group</span></a></li>
+									<li><a href="bootstrap-components-cards.html" title="Cards"><span>Cards</span></a></li>
+									<li><a href="bootstrap-components-carousel.html" title="Carousel"><span>Carousel</span></a></li>
+									<li><a href="bootstrap-components-collapse.html" title="Collapse"><span>Collapse</span></a></li>
+									<li><a href="bootstrap-components-dropdowns.html" title="Dropdowns"><span>Dropdowns</span></a></li>
+									<li><a href="bootstrap-components-forms.html" title="Forms"><span>Forms</span></a></li>
+									<li><a href="bootstrap-components-input_group.html" title="Input group"><span>Input group</span></a></li>
+									<li><a href="bootstrap-components-input_custom.html" title="Input custom"><span>Input custom</span></a></li>
+									<li><a href="bootstrap-components-jumbotron.html" title="Jumbotron"><span>Jumbotron</span></a></li>
+									<li><a href="bootstrap-components-list_group.html" title="List group"><span>List group</span></a></li>
+									<li><a href="bootstrap-components-modal.html" title="Modal"><span>Modal</span></a></li>
+									<li><a href="bootstrap-components-navs.html" title="Navs"><span>Navs</span></a></li>
+									<li><a href="bootstrap-components-navbar.html" title="Navbar"><span>Navbar</span></a></li>
+									<li><a href="bootstrap-components-pagination.html" title="Pagination"><span>Pagination</span></a></li>
+									<li><a href="bootstrap-components-popovers.html" title="Popovers"><span>Popovers</span></a></li>
+									<li><a href="bootstrap-components-progress.html" title="Progress"><span>Progress</span></a></li>
+									<li><a href="bootstrap-components-scrollspy.html" title="Scrollspy"><span>Scrollspy</span></a></li>
+									<li><a href="bootstrap-components-spinners.html" title="Spinners"><span>Spinners</span></a></li>
+									<li><a href="bootstrap-components-toasts.html" title="Toasts"><span>Toasts</span></a></li>
+									<li><a href="bootstrap-components-tooltips.html" title="Tooltips"><span>Tooltips</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Utilities"><span>Utilities</span></a>
+								<ul>
+									<li><a href="bootstrap-utilities-colors.html" title="Colors"><span>Colors</span></a></li>
+									<li><a href="bootstrap-utilities-shadows.html" title="Shadows"><span>Shadows</span></a></li>
+									<li><a href="bootstrap-utilities-borders.html" title="Borders"><span>Borders</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a title="Layout">
+							<span>Layout</span>
+							<i class="icofont-layout"></i>
+						</a>
+						<ul>
+							<li>
+								<a title="Header"><span>Header</span></a>
+								<ul>
+									<li><a href="layout-header-fixed.html" title="Fixed"><span>Fixed</span></a></li>
+									<li><a href="layout-header-static.html" title="Static"><span>Static</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Menu"><span>Menu</span></a>
+								<ul>
+									<li><a href="layout-menu-mini.html" title="Mini"><span>Mini</span></a></li>
+									<li><a href="layout-menu-hidden.html" title="Hidden"><span>Hidden</span></a></li>
+									<li><a href="layout-menu-open.html" title="Open"><span>Open</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Headline"><span>Headline</span></a>
+								<ul>
+									<li><a href="layout-headline-style-1.html" title="Style 1"><span>Style 1</span></a></li>
+									<li><a href="layout-headline-style-2.html" title="Style 2"><span>Style 2</span></a></li>
+									<li><a href="layout-headline-style-3.html" title="Style 3"><span>Style 3</span></a></li>
+									<li><a href="layout-headline-style-4.html" title="Style 3"><span>Style 4</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" title="Content"><span>Content</span></a>
+								<ul>
+									<li><a href="layout-content-full.html" title="Full Width"><span>Full Width</span></a></li>
+									<li><a href="layout-content-narrow.html" title="Narrow"><span>Narrow</span></a></li>
+									<li><a href="layout-content-boxed.html" title="Boxed"><span>Boxed</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" title="Slidebar"><span>Slidebar</span></a>
+								<ul>
+									<li><a href="layout-slidebar-hidden.html" title="Hidden"><span>Hidden</span></a></li>
+									<li><a href="layout-slidebar-open.html" title="Open"><span>Open</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" title="Footer"><span>Footer</span></a>
+								<ul>
+									<li><a href="#" title="Hidden"><span>Hidden</span></a></li>
+									<li><a href="#" title="Open"><span>Open</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<lh><span>Components</span></lh>
+					<li>
+						<a title="UI">
+							<span>UI</span>
+							<i class="fas fa-palette"></i>
+						</a>
+						<ul>
+							<li><a href="ui-buttons.html" title="Buttons"><span>Buttons</span></a></li>
+							<li><a href="ui-avatars.html" title="Avatars"><span>Avatars</span></a></li>
+							<li><a href="ui-badges.html" title="Badges"><span>Badges</span></a></li>
+							<li><a href="ui-alerts.html" title="Alerts"><span>Alerts</span></a></li>
+							<li><a href="ui-ribbon.html" title="Ribbon"><span>Ribbon</span></a></li>
+							<li><a href="ui-breadcrumb.html" title="Breadcrumb"><span>Breadcrumb</span></a></li>
+							<li><a href="ui-pagination.html" title="Pagination"><span>Pagination</span></a></li>
+							<li>
+								<a title="Cards"><span>Cards</span></a>
+								<ul>
+									<li><a href="ui-cards-team.html" title="Team Cards"><span>Team Cards</span></a></li>
+									<li><a href="ui-cards-contact.html" title="Contact Cards"><span>Contact Cards</span></a></li>
+									<li><a href="ui-cards-product.html" title="Product Cards"><span>Product Cards</span></a></li>
+								</ul>
+							</li>
+							<li><a href="ui-modal.html" title="Buttons"><span>Modals</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a title="Components">
+							<span>Components</span>
+							<i class="icofont-puzzle"></i>
+						</a>
+						<ul>
+							<li><a href="components-lobipanel.html" title="Lobipanel"><span>Lobipanel</span></a></li>
+							<li><a href="components-notify.html" title="Notify"><span>Notify</span></a></li>
+							<li><a href="components-pnotify.html" title="PNotify"><span>PNotify</span></a></li>
+							<li><a href="components-nestable.html" title="Nestable"><span>Nestable</span></a></li>
+							<li><a href="components-tabs.html" title="Tabs"><span>Tabs</span></a></li>
+							<li><a href="components-treeview.html" title="Tree View"><span>Tree View</span></a></li>
+							<li><a href="components-treemenu.html" title="Tree Menu"><span>Tree Menu</span></a></li>
+							
+							<li><a href="elements-accordion.html" title="Accordion"><span>Accordion</span></a></li>
+							<li><a href="elements-popovers.html" title="Popovers"><span>Popovers</span></a></li>
+							<li><a href="elements-lightbox.html" title="Lightbox"><span>Lightbox</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a title="Forms">
+							<span>Forms</span>
+							<i class="icofont-pencil-alt-2"></i>
+						</a>
+						<ul>
+							<li><a href="forms-elements.html" title="Elements"><span>Elements</span></a></li>
+							<li><a href="forms-custom_elements.html" title="Custom Elements"><span>Custom Elements</span></a></li>
+							<li><a href="forms-groups.html" title="Input Groups"><span>Input Groups</span></a></li>
+							<li><a href="forms-layout.html" title="Layout"><span>Layout</span></a></li>
+							<li>
+								<a title="Plugins"><span>Plugins</span></a>
+								<ul>
+									<li><a href="forms-plugins-mask.html" title="Mask"><span>Mask</span></a></li>
+									<li><a href="forms-plugins-touchspin.html" title="TouchSpin"><span>TouchSpin</span></a></li>
+									<li><a href="forms-plugins-bootstrap-tokenfield.html" title="Tags"><span>Tags</span></a></li>
+									<li><a href="forms-plugins-bootstrap-typeahead.html" title="Typeahead"><span>Typeahead</span></a></li>
+									<li><a href="forms-plugins-bootstrap-select.html" title="Select"><span>Select</span></a></li>
+									<li><a href="forms-plugins-bootstrap-datepicker.html" title="Date Picker"><span>Date Picker</span></a></li>
+									<li><a href="forms-plugins-bootstrap-datetimepicker.html" title="Date Time Picker"><span>Date Time Picker</span></a></li>
+									<li><a href="forms-plugins-bootstrap-daterangepicker.html" title="Date Range Picker"><span>Date Range Picker</span></a></li>
+									<li><a href="forms-plugins-bootstrap-colorpicker.html" title="Color Picker"><span>Color Picker</span></a></li>
+									<li><a href="forms-plugins-bootstrap-iconpicker.html" title="Icon Picker"><span>Icon Picker</span></a></li>
+								</ul>
+							</li>
+							<li><a href="forms-validation.html" title="Validation"><span>Validation</span></a></li>
+							<li><a href="forms-wizard.html" title="Wizard"><span>Wizard</span></a></li>
+							<li><a href="forms-editor.html" title="Editor"><span>Editor</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Tables">
+							<span>Tables</span>
+							<i class="icofont-navigation-menu"></i>
+						</a>
+						<ul>
+							<li><a href="table-basic.html" title="Basic"><span>Basic</span></a></li>
+							<li><a href="table-custom.html" title="Basic"><span>Custom</span></a></li>
+							<li><a href="table-responsive.html" title="Responsive"><span>Responsive</span></a></li>
+							<li><a href="table-datatables.html" title="DataTables"><span>DataTables</span></a></li>
+							<li><a href="table-bttable.html" title="BT table"><span>BT table</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a title="Widgets">
+							<span>Widgets</span>
+							<i class="icofont-dice-multiple"></i>
+						</a>
+						<ul>
+							<li><a href="widgets-statistics.html" title="Statistics"><span>Statistics</span></a></li>
+							<li><a href="widgets-data.html" title="Data"><span>Data</span></a></li>
+							<li><a href="widgets-chart.html" title="Chart"><span>Chart</span></a></li>
+							<li><a href="widgets-social.html" title="Social"><span>Social</span></a></li>
+							<li><a href="widgets-blog.html" title="Blog"><span>Blog</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Icons">
+							<span>Icons</span>
+							<i class="icofont-brand-tata-indicom"></i>
+						</a>
+						<ul>
+							<li><a href="fonts-font_awesome_5.html" title="Font Awesome 5"><span>Font Awesome 5</span></a></li>
+							<li><a href="fonts-material_icon.html" title="Material Icons"><span>Material Icons</span></a></li>
+							<li><a href="fonts-themify_icon.html" title="Themify Icons"><span>Themify Icons</span></a></li>
+							<li><a href="fonts-flag_icon.html" title="Flag Icons"><span>Flag Icons</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" title="Charts">
+							<span>Charts</span>
+							<i class="icofont-chart-pie"></i>
+						</a>
+						<ul>
+							<li><a href="chart-echarts.html" title="ECharts"><span>ECharts</span></a></li>
+							<li><a href="chart-chartist_js.html" title="Chartist.js"><span>Chartist.js</span></a></li>
+							<li><a href="chart-morris_js.html" title="morris.js"><span>morris.js</span></a></li>
+							<li><a href="chart-peity.html" title="Peity"><span>Peity</span></a></li>
+							<li><a href="chart-sparklines.html" title="Sparklines"><span>Sparklines</span></a></li>
+							<li><a href="chart-knob.html" title="Knob"><span>Knob</span></a></li>
+						</ul>
+					</li>
+					<lh><span>Extra</span></lh>
+					<li>
+						<a title="Pages">
+							<span>Pages</span>
+							<i class="icofont-page"></i>
+						</a>
+						<ul>
+							<li><a href="pages-blank.html" title="Blank"><span>Blank</span></a></li>
+							<li>
+								<a title="Users"><span>Users</span></a>
+								<ul>
+									<li><a href="pages-users-login.html" title="Login"><span>Login</span></a></li>
+									<li><a href="pages-users-register.html" title="Register"><span>Register</span></a></li>
+									<li><a href="pages-users-password.html" title="Forgot Password"><span>Forgot Password</span></a></li>
+									<li><a href="pages-users-lockscreen.html" title="Lockscreen"><span>Lockscreen</span></a></li>
+									<li><a href="pages-users-profile.html" title="Profile"><span>Profile</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="ECommerce"><span>ECommerce</span></a>
+								<ul>
+									<li>
+										<a title="Product"><span>Product</span></a>
+										<ul>
+											<li><a href="pages-ecommerce-product-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-ecommerce-product-grid.html" title="Grid"><span>Grid</span></a></li>
+											<li><a href="pages-ecommerce-product-detail.html" title="Detail"><span>Detail</span></a></li>
+											<li><a href="pages-ecommerce-product-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a title="Orders"><span>Orders</span></a>
+										<ul>
+											<li><a href="pages-ecommerce-orders-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-ecommerce-orders-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a title="Customers"><span>Customers</span></a>
+										<ul>
+											<li><a href="pages-ecommerce-customers-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-ecommerce-customers-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a title="Blog"><span>Blog</span></a>
+								<ul>
+									<li><a href="pages-blog-list.html" title="List"><span>List</span></a></li>
+									<li><a href="pages-blog-grid.html" title="Grid"><span>Grid</span></a></li>
+									<li><a href="pages-blog-form.html" title="Form"><span>Form</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Support"><span>Support</span></a>
+								<ul>
+									<li>
+										<a title="Ticket"><span>Ticket</span></a>
+										<ul>
+											<li><a href="pages-support-ticket-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-support-ticket-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a title="Feedback"><span>Feedback</span></a>
+										<ul>
+											<li><a href="pages-support-feedback-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-support-feedback-detail.html" title="Detail"><span>Detail</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a title="Knowledge Base"><span>Knowledge Base</span></a>
+										<ul>
+											<li><a href="pages-support-knowledgebase-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-support-knowledgebase-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a title="Forum"><span>Forum</span></a>
+										<ul>
+											<li><a href="pages-support-forum-list.html" title="List"><span>List</span></a></li>
+											<li><a href="pages-support-forum-form.html" title="Form"><span>Form</span></a></li>
+										</ul>
+									</li>
+									<li><a href="pages-support-faq.html" title="FAQ"><span>FAQ</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Task"><span>Task</span></a>
+								<ul>
+									<li><a href="pages-task-list.html" title="List"><span>List</span></a></li>
+									<li><a href="pages-task-detail.html" title="Detail"><span>Detail</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a title="Error"><span>Error</span></a>
+								<ul>
+									<li><a href="pages-error-comingsoon.html" title="Coming Soon"><span>Coming Soon</span></a></li>
+									<li><a href="pages-error-maintenance.html" title="Maintenance"><span>Maintenance</span></a></li>
+									<li><a href="pages-error-403.html" title="403"><span>403</span></a></li>
+									<li><a href="pages-error-404.html" title="404"><span>404</span></a></li>
+									<li><a href="pages-error-500.html" title="500"><span>500</span></a></li>
+									<li><a href="pages-error-503.html" title="503"><span>503</span></a></li>
+								</ul>
+							</li>
+							<li><a href="pages-gallery.html" title="Gallery"><span>Gallery</span></a></li>
+							<li><a href="pages-invoice.html" title="Invoice"><span>Invoice</span></a></li>
+							<li>
+								<a title="Timeline"><span>Timeline</span></a>
+								<ul>
+									<li><a href="pages-timeline_latest.html" title="Latest News"><span>Latest News</span></a></li>
+									<li><a href="pages-timeline_standard.html" title="Standard"><span>Standard</span></a></li>
+								</ul>
+							</li>
+							<li><a href="pages-pricing.html" title="Pricing"><span>Pricing</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a title="Apps">
+							<span>Apps</span>
+							<i class="icofont-cubes"></i>
+						</a>
+						<ul>
+							<li><a href="apps-calendar.html" title="Calendar"><span>Calendar</span></a></li>
+							<li><a href="apps-chat.html" title="Chat"><span>Chat</span></a></li>
+							<li><a href="apps-mail.html" title="Mail"><span>Mail</span></a></li>
+							<li><a href="apps-filemanager.html#" title="File Manager"><span>File Manager</span></a></li>
+							<li><a href="apps-todo.html" title="To-Do"><span>To-Do</span></a></li>
+							<li><a href="apps-nestables.html" title="Nestables"><span>Nestables</span></a></li>
+							<li><a href="apps-cropper.html" title="Cropper"><span>Cropper</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a title="Pages">
+							<span>Menu Levels</span>
+							<i class="icofont-page"></i>
+						</a>
+						<ul>
+							<li><a href="#" title="Level 1"><span>Level 1</span></a></li>
+							<li>
+								<a href="#" title="Level 2"><span>Level 2</span></a>
+								<ul>
+									<li><a href="#" title="Sub Menu 1"><span>Sub Menu 1</span></a></li>
+									<li><a href="#" title="Sub Menu 2"><span>Sub Menu 2</span></a></li>
+									<li><a href="#" title="Sub Menu 3"><span>Sub Menu 3</span></a></li>
+									<li><a href="#" title="Sub Menu 4"><span>Sub Menu 4</span></a></li>
+									<li><a href="#" title="Sub Menu 5"><span>Sub Menu 5</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#" title="Level 3"><span>Level 3</span></a></li>
+							<li><a href="#" title="Level 4"><span>Level 4</span></a></li>
+							<li>
+								<a href="#" title="Level 5"><span>Level 5</span></a>
+								<ul>
+									<li><a href="#" title="Sub Menu 1"><span>Sub Menu 1</span></a></li>
+									<li><a href="#" title="Sub Menu 2"><span>Sub Menu 2</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#" title="Level 6"><span>Level 6</span></a></li>
+							<li><a href="#" title="Level 7"><span>Level 7</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="menu_asideLeft-footer">
+				<ul>
+					<li><a href="#" title=""><i class="icofont-user-alt-3"></i></a></li>
+					<li><a href="#" title=""><i class="icofont-settings-alt"></i></a></li>
+					<li><a href="#" title=""><i class="icofont-sign-in"></i></a></li>
+				</ul>
+			</nav>
+		</aside>		<main class="main">
+
+			<header class="header">
+				<nav class="menu_header navbar navbar-expand-lg navbar-light">
+					<div class="navbar-head">
+						<button class="navbar-slidebar btnSlidebar_left" type="button"><i class="fas fa-ellipsis-v"></i></button>
+						<a class="navbar-brand" href="#"><img src="docs/logo-pc.png" alt="Logo"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><i class="fas fa-bars"></i></button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li>
+								<a href="#" title="Visit Site">
+									<i class="fas fa-eye"></i>
+									<span class="d-lg-none d-xl-none">Visit Site</span>
+								</a>
+							</li>
+							<li class="dropdown shortcut">
+								<a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+									<i class="fas fa-th"></i>
+									<span class="d-lg-none d-xl-none">Shortcuts</span>
+								</a>
+								<ul class="dropdown-menu">
+									<ol class="shortcut_items">
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-address-card"></i>
+												<p class="lead">Products</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-brain"></i>
+												<p class="lead">Orders</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-band-aid"></i>
+												<p class="lead">Customers</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-book-reader"></i>
+												<p class="lead">Projects</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-box"></i>
+												<p class="lead">Support</p>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fas fa-city"></i>
+												<p class="lead">Settings</p>
+											</a>
+										</li>
+									</ol>
+								</ul>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li class="dropdown notification">
+								<a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+									<i class="fas fa-bell"></i>
+									<span class="d-lg-none d-xl-none">Notifications</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<div class="notification_headline text-center">
+										<p class="h5">9 New</p>
+										<p class="lead">User Notifications</p>
+									</div>
+									<ol class="notification_items">
+										<li>
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">14</span>System Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">55</span>User Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">76</span>Update Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li class="notification-success">
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">87</span>Success Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li class="notification-info">
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">23</span>Info Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li class="notification-warning">
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">34</span>Warning Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+										<li class="notification-danger">
+											<a href="#">
+												<h5 class="title"><span class="badge badge-primary badge-pill">3</span>Danger Alerts</h5>
+												<small class="summary">Donec id elit non mi porta.</small>
+												<small class="time">3 days ago</small>
+											</a>
+										</li>
+									</ol>
+								
+								</ul>
+							</li>
+							<li class="dropdown language">
+								<a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+									<i class="fas fa-globe-americas"></i>
+									<span class="d-lg-none d-xl-none">Languages</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<ol class="nav-menu">
+										<li><a href="#"><span class="flag-icon flag-icon-tr"></span> Türkçe</a></li>
+										<li><a href="#"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+										<li><a href="#"><span class="flag-icon flag-icon-de"></span> Deutsche</a></li>
+									</ol>
+								</ul>
+							</li>
+							<li class="dropdown user">
+								<a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+									<i class="fas fa-user"></i>
+									<span class="d-lg-none d-xl-none">User</span>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<ol class="nav-menu">
+										<li><a href="#">Profile</a></li>
+										<li><a href="#">Messages <span class="badge badge-primary badge-pill">1</span></a></li>
+										<li><a href="#">Calendar</a></li>
+										<li><a href="#">Settings</a></li>
+										<li><a href="#">Log Out</a></li>
+									</ol>
+								</ul>
+							</li>
+							<li><a id="showRight" class="btnSlidebar_right"><i class="fas fa-stream"></i><span class="d-lg-none d-xl-none">Slide Right</span></a></li>
+							<li><a href="#"><i class="fas fa-sign-out-alt"></i><span class="d-lg-none d-xl-none">Log Out</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>			<section class="section">
+				<div class="headline style-right">
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<h2 class="title">Dashboard</h2>
+						</div>
+						<div class="col-md-6">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active">Dashboard</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="content container-fluid">
+					<div class="row">
+						<div class="col-md-12">1</div>
+						<div class="col-md-12">2</div>
+						<div class="col-md-12">3</div>
+						<div class="col-md-12">4</div>
+					</div>
+					<div class="row"></div>
+					<div class="row"></div>
+					<div class="row"></div>
+				</div>
+			</section>
+			<footer class="footer"></footer>		</main>
+		<aside class="slidePanel slidePanel-right"></aside>
+		<div id="slidePanel-overlayRight" class="slidePanel-overlayRight"></div>		<script type="text/javascript" src="plugins/jquery/js/jquery.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery-ui/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="plugins/popper/js/popper.min.js"></script>
+		<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="common/js/slidebar.js"></script>
+		<script type="text/javascript" src="common/js/complete.js"></script>	</body>
 </html>
